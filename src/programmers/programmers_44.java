@@ -13,7 +13,7 @@ public class programmers_44 {
 		//주어진수의 더한값을 저장할 변수를 선언한다.(보기에 int형을 넘는 숫자까지 제시되었으므로 long형으로선언)
 		long sum=0;
 		//리턴할 변수를 선언한다.
-		long[] answer = new long[n];
+		long[] answer = new long[n]; 
 		//반복문을 통해 주어진수를 더하는값을 배열에 저장한다.
 		for(int i=0 ; i<n ; i++) {
 			sum +=x;
