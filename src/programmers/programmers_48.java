@@ -26,14 +26,21 @@ public class programmers_48 {
 				right = n;
 			
 			}else {
+				//0인경우 11로 바꿔준다.
 				if(n==0) n += 11;
+				
+				//가까운 거리를 구한다.
 				L_dis = (Math.abs(n-left))/3 + (Math.abs(n-left))%3;
 				R_dis = (Math.abs(right-n))/3 + (Math.abs(right-n))%3;
+				
+				//만약 거리가 같을경우 왼손잡이인지, 오른손잡이인지 판별한다.
 				if(L_dis == R_dis) {
+					//오른손잡이 일경우 
 					if(hand.equals("right")) {
 						sb.append("R");
 						right = n;
 					}else {
+					//왼손잡이 일경우
 						sb.append("L");
 						left = n;
 					}
