@@ -7,6 +7,7 @@ public class programmers_51 {
 	public static void main(String[] args) {
 		 String answer = "";
 		 int[][] scores = {{100,90,98,88,65},{50,45,99,85,77},{47,88,95,80,67},{61,57,100,80,65},{24,90,94,75,65}};
+		 //이중 for문을 사용한다.
 	        for (int i = 0; i < scores.length; i++) {
 	            int ownScore = scores[i][i];
 	            boolean sameScore = true;
@@ -48,6 +49,7 @@ public class programmers_51 {
 	    }
 	    
 	    public static String getRank(double score) {
+	    	//평균으로 학점을 구한다.
 	        if (score >= 90) {
 	            return "A";
 	        }
