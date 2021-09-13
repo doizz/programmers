@@ -12,16 +12,21 @@ public class programmers_52 {
 		int[] preference = {7, 5, 5};
 		 int max = 0;
 	        String maxJob = "";
-
+	        //전체 표가 들어있는 테이블을 한개씩 for문을 돌려 반복한다.
 	        for (int i = 0; i < table.length; i++) {
+	        	//table의 i번째를 공백을 나누어 배열에 넣는다.
 	            String jobLang[] = table[i].split(" ");
+	            //각 직업군의 job명을 담을 변수를 선언한다.
 	            String job = "";
 	            int sum = 0;
-
+	            
+	            //한개의 직업군의 대하여 공백을 나눈 직업군에 대하여 반복문을 사용한다.
 	            for (int j = 0; j < jobLang.length; j++) {
+	            	//순서에 해당하는 직업군 점수를 변수에 담는다.
 	                int score = jobLang.length - j;
 
 	                //0번째 직업군 이름
+	                //배열의 첫번쨰는 직업군 이름이므로 job변수에 넣고 continue 함수로 빠져나온다.
 	                if (j == 0) {
 	                    job = jobLang[j];
 	                    continue;
@@ -29,7 +34,9 @@ public class programmers_52 {
 
 	                //직업군 언어와 개발자언어가 같은 경우 점수 계산
 	                for (int k = 0; k < languages.length; k++) {
+	                //첫번째 배열에 대하여 개발자언어가 같은지 판별한다.
 	                    if (languages[k].equals(jobLang[j])) {
+	                    	//같을 경우 해당하는 점수를 구한다.
 	                        sum += preference[k] * score;
 	                    }
 	                }
