@@ -55,7 +55,7 @@ public class programmers_52 {
 	                maxJob = job;
 	            }
 	        }
-
+	        //값을 리턴한다.
 	        System.out.println(maxJob + " : " + max);
 
 //	        return maxJob;
