@@ -4,7 +4,9 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
-
+	/*
+	 * 프로그래머스 LEVEL_2 (기능개발)
+	 */
 public class programmers_2_3 {
 
 	public static void main(String[] args) {
