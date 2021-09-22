@@ -13,6 +13,7 @@ public class programmers_2_3 {
 		int[] progresses = {93, 30, 55};
 		int[] speeds = {1,30,5};
 		
+		//큐를 생성한다.
 		 Queue<Integer> queue = new LinkedList<>();
 	        for (int i = 0; i < progresses.length; i++)
 	            queue.add((int) (Math.ceil((100.0 - progresses[i]) / speeds[i])));
@@ -28,6 +29,7 @@ public class programmers_2_3 {
 	            }
 	            ans.add(cnt);
 	        }
+	        
 	        System.out.println(ans.stream().mapToInt(Integer::intValue).toArray()); 
 	    }
 	}
