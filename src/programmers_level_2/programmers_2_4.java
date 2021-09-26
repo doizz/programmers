@@ -1,7 +1,9 @@
 package programmers_level_2;
 
 import java.util.PriorityQueue;
-
+	/*
+	 * 프로그래머스 LEVEL_2 더 맵게
+	 */
 public class programmers_2_4 {
 
 	public static void main(String[] args) {
@@ -33,6 +35,7 @@ public class programmers_2_4 {
             answer ++;
         }
         
+        //스코빌 지수를 반환한다.
         System.out.println(answer);
 	}
 
