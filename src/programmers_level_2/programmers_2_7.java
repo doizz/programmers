@@ -1,5 +1,8 @@
 package programmers_level_2;
 
+	/*
+	 * 프로그래머스 LEVEL_2 (문자열 압축하기)
+	 */
 public class programmers_2_7 {
 
 	public static void main(String[] args) {
@@ -14,10 +17,12 @@ public class programmers_2_7 {
             int hit = 1;
             for (int j = 0; j <= s.length() / i; j++) {
                 int start = j * i;
+                System.out.println("start::::::::"+start);
                 int end = i * (j + 1) > s.length() ? s.length() : i * (j + 1);
                 now = next;
                 next = s.substring(start, end);
- 
+                
+                System.out.println("next:::::::"+next);
                 if(now.equals(next)) {
                     hit++;
                 } else {
